@@ -1,0 +1,295 @@
+<form action="#" method="post" class="form_dangtin" enctype="multipart/form-data"> 
+                    <div class="input_select">
+                        <label for="tinh">Khu vực xem xe <span style="color: red;">*</span></label>
+                        <br>
+                        <select name="khuvuc" id="tinh">
+                            <option selected disabled >Chọn tỉnh thành phố</option>
+                            <option value="Bắc Ninh">Bắc Ninh</option>
+                            <option value="Bắc Giang">Bắc Giang</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hà Nam">Hà Nam</option>
+                            <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                            <option value="Vũng Tàu">Vũng Tàu</option>
+                            <option value="Quảng Ninh">Quảng Ninh</option>
+                            <option value="Hạ Long">Hạ Long</option>
+                            <option value="Thái Nguyên">Thái Nguyên</option>
+                            <option value="Ninh Bình">Ninh Bình</option>
+                        </select>
+                        <div class="icon_select">
+                            <img src="img/down-filled-triangular-arrow.png" alt="" width="15px" style="position: relative;top: -20px;left: 98%;"> 
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <label for="radio_tile_group_4">Tình trạng<span style="color: red;">*</span></label>
+                        <div class="radio_tile_group" id="radio_tile_group_4">
+
+                            <div class="input_container_2">
+                                <input type="radio" id="cu" name="tinhtrang" value="Xe Cũ">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="cu">Xe cũ</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_2">
+                                <input type="radio" id="moi" name="tinhtrang" value="Xe Mới">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="moi">Xe mới</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <label for="">Ảnh xe<span style="color: red;">*</span></label>
+                        <div class="huongdan">
+                            <li>Đăng ít nhất 3 ảnh</li>
+                            <li>Ảnh đầu tiên sẽ là ảnh đại diện cho tin đăng</li>
+                            <p>Chụp hình đầy đủ và chi tiết sẽ gây ấn tượng tốt với người xem tin : ngoại thất ( mặt trước, mặt sau, hai bên ),
+                                nội thất ( khoang lái, hàng ghế trước, hàng ghế sau ),khoang máy.
+                                <br><a href="#">Tham khảo hình mẫu</a>     
+                            </p>
+                        </div>
+                        <div class="push_picture">          
+                            <div class="upload">
+                                <div class="image">
+                                    <img  alt="" id="img_1">
+                                    <!-- <img  alt="" id="img_2">
+                                    <img  alt="" id="img_3"> -->
+                                </div>
+                                <div class="content">
+                                    <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></i></div>
+                                    <div class="text">Không có file gì </div>
+                                </div>
+                                <div id="cancel-btn"><i class="fa-solid fa-xmark"></i></div>
+                                <div class="file-name">Tên tập tin ở đây</div>
+                            </div>
+                            <input type="file" id="default-btn" name="hinhanh" hidden multiple="multiple">
+                            <div class="icon_2"><i class="fa-solid fa-camera"></i></div>
+                            <button onclick="defaultBtnActive()" type="button"  id="custom-btn">Bấm để chọn ảnh cần tải</button>
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box">
+                            <label for="text">Hãng sản xuất<span style="color: red;">*</span></label>
+                            <input type="text" name="hangsx">
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box">
+                            <label for="text">Dòng xe<span style="color: red;">*</span></label>
+                            <input type="text" name="dongxe">
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box">
+                            <label for="text">Năm sản xuất<span style="color: red;">*</span></label>
+                            <input type="text" name="namsx">
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box">
+                            <label for="text">Phiên bản<span style="color: red;">*</span></label>
+                            <input type="text" name="phienban">
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box">
+                            <label for="text">Số km đã đi<span style="color: red;">*</span></label>
+                            <input type="number" name="sokmdadi"> <span style="position: relative;top: -15px;left: 700px;color: #81808095;">Km</span>
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                            <label for="radio_tile_group">Hộp số<span style="color: red;">*</span></label>
+                        <div class="radio_tile_group" id="radio_tile_group">
+
+                            <div class="input_container">
+                                <input type="radio" id="tudong" name="hopso" value="Tự Động">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="tudong">Tự Động</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container">
+                                <input type="radio" id="sosan" name="hopso" value="Số Sàn">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="sosan">Số Sàn</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container">
+                                <input type="radio" id="bantudong" name="hopso" value="Bán Tự Động">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="bantudong">Bán Tự Động</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <label for="radio_tile_group_2">Dẫn động<span style="color: red;">*</span></label>
+                        <div class="radio_tile_group" id="radio_tile_group_2">
+
+                            <div class="input_container_4">
+                                <input type="radio" id="FWD" name="dandong" value="FWD">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="FWD">FWD</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="RWD" name="dandong" value="RWD">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="RWD">RWD</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="AWD" name="dandong" value="AWD">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="AWD">AWD</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="4WD" name="dandong" value="4WD">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="4WD">4WD</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <label for="radio_tile_group_3">Nhiên liệu<span style="color: red;">*</span></label>
+                        <div class="radio_tile_group" id="radio_tile_group_3">
+
+                            <div class="input_container_4">
+                                <input type="radio" id="xang" name="nhienlieu" value="Xăng">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="xang">Xăng</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="dau" name="nhienlieu" value="Dầu">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="dau">Dầu</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="dien" name="nhienlieu" value="Điện">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="dien">Điện</label>
+                                </div>
+                            </div>
+
+                            <div class="input_container_4">
+                                <input type="radio" id="hybird" name="nhienlieu" value="Hybird">
+                                <div class="radio_tile">
+                                    <!-- iconn -->
+                                    <label for="hybird">Hybird</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                            <div class="input_box">
+                                <label for="text">Giá bán<span style="color: red;">*</span></label>
+                                <input type="number" name="giaban"><span style="position: relative;top: -15px;left: 690px;color: #81808095;">VND</span>
+                            </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <label for="text">Tiêu đề của tin<span style="color: red;">*</span></label>
+                        <div class="input_box_title_tin">
+                            <p>Tiêu đề tin cần các thông tin quan trọng nhất để nâng cao hiệu quả tìm kiếm :
+                                hãng xe, dòng xe, phiên bản, năm sản xuất, số tự động / số sàn, số km đã đi,...và các đặc tính nổi bật khác.
+                            </p>
+                            <span style="color:#6d6b6bef;">Ví dụ:</span><b>Toyota Fortuner 2.8V 4x4 AT2019, máy dầu, đã đi 40.000km, nhập khẩu, màu đen...</b>
+                        </div>
+                        <div class="input_box_tin">
+                            <label for="title_tin">Tiêu đề của tin<span style="color: red;">*</span></label>
+                            <textarea name="title_tin" id="title_tin" cols="98" rows="7"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <div class="input_box_tin">
+                            <label for="title_tin">Mô tả chi tiết<span style="color: red;">*</span></label>
+                            <textarea name="title_tin_ct" id="title_tin" cols="98" rows="7" 
+                            placeholder="Nhập mô tả chi tiểt về xe đăng bán
+
+                            - Tình trạng chiếc xe
+                            - Thời gian sử dụng xe
+                            - Bảo trì xe bao lâu/lần, Ở đâu
+                            - Tình trạng giấy tờ"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form_input_chung">
+                        <button type="submit" name="btn_dangtin">Đăng tin</button>
+                    </div>
+
+                    
+                    
+                </form>
+
+                <?php
+                        include('control.php');
+                        if (isset($_POST['btn_dangtin'])) {
+                            $getdata = new data();
+                            if (empty($_POST['khuvuc']) || empty($_POST['tinhtrang'] || empty($_POST['giaban']))) {
+                                echo '<script>alert("Bạn chưa nhập đủ Thông tin")</script>';
+                            } else {
+                                move_uploaded_file($_FILES['hinhanh']['tmp_name'],'./img/uploads/'.$_FILES['hinhanh']['name']);
+
+                                $insert = $getdata->in_product(
+                                    $_POST['khuvuc'],
+                                    $_POST['tinhtrang'],
+                                    $_FILES['hinhanh']['name'],
+                                    $_POST['hangsx'],
+                                    $_POST['dongxe'],
+                                    $_POST['namsx'],
+                                    $_POST['phienban'],
+                                    $_POST['sokmdadi'],
+                                    $_POST['hopso'],
+                                    $_POST['dandong'],
+                                    $_POST['nhienlieu'],
+                                    $_POST['giaban'],
+                                    $_POST['title_tin'],
+                                    $_POST['title_tin_ct']
+                                );
+                                // $name = $_POST['username'];
+                                if ($insert) {
+                                    echo '<script>alert("Bạn đăng tin Thành Công")</script>';
+                                    } else {
+                                    echo '<script>alert("Bạn đăng tin Thất Bại")</script>';
+                                }
+                            }
+                        }
+                    ?>

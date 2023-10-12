@@ -1,0 +1,249 @@
+/* BASIC */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+#wp-content{
+    width: 100%;
+}
+
+#footer{
+    width: 100%;
+}
+
+#header .container{
+    width: 100%;
+    background: #F05626;
+}
+
+#wp-content .container{
+    width: 85%;
+    margin: 30px 100px;
+    padding: 10px;
+    min-height: 500px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+#footer .container{
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+}
+
+/* END BASIC */
+
+/* NAV */
+
+    #header nav{
+        width: 85%;
+        margin: 0 auto;
+        /* padding: 10px; */
+        height: 80px;
+        background: #F05626;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+
+    .logo img{
+        width: 180px;    
+    }
+
+    /* MENU */
+        ul#menu_bar{
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        ul#menu_bar>li>a>i{
+            padding-right: 10px;
+        }
+
+        ul#menu_bar>li>a{
+            font-size: 20px;
+            padding: 25px;
+            padding-bottom: 30px;
+            color: white;
+            position: relative;
+            text-decoration: none;
+        }
+
+        ul#menu_bar>li:hover ul.menu_bar_2{
+            display: block;
+        }
+
+        ul.menu_bar_2{
+            position: absolute;
+            list-style: none;
+            top: 80px;
+            width: 12%;
+            height: 210px;
+            background: #F05626;
+            padding-left: 10px;
+            z-index: 1;
+            display: none;
+        }
+
+
+
+        ul.menu_bar_2 li {
+            margin: 20px;
+          
+        }
+
+        ul.menu_bar_2 li a{
+            font-size: 18px;
+            color: white;
+            margin-bottom: 1px solid grey;
+            /* text-decoration: none; */
+        }
+
+            /* HIỆU ỨNG KHI HOVER */
+            #menu_bar>li>a{
+                position: relative;
+            }
+            
+            #menu_bar>li>a::before{
+                position: absolute;
+                width: 0%;
+                left: 0;
+                content: "";
+                height: 4px;
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+                bottom: 0px;
+                transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            
+            #menu_bar>li:hover>a::before{
+                width: 100%;
+            } */
+            /* END HIỆU ỨNG KHI HOVER */
+
+    /* END MENU */
+/* END NAV */
+
+/* WP-CONTENT */
+
+   
+    
+    /* TABLE */
+
+        form#search{
+            width: 100%;
+        }
+
+        table{
+            width: 100%;
+            padding: 10px
+        }
+
+    /* END TABLE */
+
+/* END WP-CONTENT */
+/* FOOTER */
+    .container_footer{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        padding: 35px 0;
+    }
+
+    .flex-footer{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    ul.text{
+        list-style: none;
+        font-size: 17px;
+    }
+
+    ul.text li div a{
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .flex-footer ul.text{
+        display: block;
+        margin: 20px -40px;
+    }
+
+    ul.text_2{
+        list-style: none;
+        font-size: 17px;
+    }
+
+    ul.text_2 li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    ul.text_2 li a:hover{
+        color:rgb(255, 89, 0); ;
+    }
+
+    .flex-footer ul.text_2{
+        display: block;
+        margin: 20px 100px;
+    }
+
+    ul.text_3{
+        list-style: none;
+        font-size: 17px;
+    }
+
+    ul.text_3 li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .flex-footer ul.text_3{
+        display: block;
+        margin: 20px 0px;
+    }
+
+
+
+    div.button_1{
+        width: 350px;
+        height: 40px;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    div span.hover{
+        color: rgb(255, 89, 0);
+    }
+
+    div span.hover:hover{
+        color:white;
+    }
+
+    div.button_2{
+        width: 350px;
+        height: 40px;
+        background-color: tomato;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+    }
+/* END FOOTER */

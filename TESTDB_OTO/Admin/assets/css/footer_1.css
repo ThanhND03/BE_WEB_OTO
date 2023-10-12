@@ -1,0 +1,99 @@
+/* footer */
+#footer{
+    background-color: #000;
+    min-height: 400px;
+}
+
+
+.container-footer{
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+ul.text{
+    list-style: none;
+    font-size: 17px;
+}
+
+ul.text li div a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.flex-footer ul.text{
+    display: block;
+    margin: 20px -40px;
+}
+
+ul.text_2{
+    list-style: none;
+    font-size: 17px;
+}
+
+ul.text_2 li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul.text_2 li a:hover{
+    color:rgb(255, 89, 0); ;
+}
+
+.flex-footer ul.text_2{
+    display: block;
+    margin: 20px 100px;
+}
+
+ul.text_3{
+    list-style: none;
+    font-size: 17px;
+}
+
+ul.text_3 li a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-footer ul.text_3{
+    display: block;
+    margin: 20px 0px;
+}
+
+
+
+div.button_1{
+    width: 350px;
+    height: 40px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+div span.hover{
+    color: rgb(255, 89, 0);
+}
+
+div span.hover:hover{
+    color:white;
+}
+
+div.button_2{
+    width: 350px;
+    height: 40px;
+    background-color: tomato;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
